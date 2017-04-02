@@ -1,5 +1,8 @@
-﻿using System;
-using SQLitePCL;
+﻿
+
+using SQLite.Net;
+using System;
+
 
 namespace DailyNote
 {

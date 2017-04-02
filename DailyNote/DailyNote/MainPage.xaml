@@ -11,12 +11,16 @@
         <Grid.Background>
             <ImageBrush Stretch="Fill" ImageSource="image/DSC_0018.jpg"/>
         </Grid.Background>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="33,128,0,0" TextWrapping="Wrap" Text="Account" VerticalAlignment="Top" Height="37" Width="74" FontWeight="Bold" TextAlignment="Center"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="33,209,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Height="30" Width="74" FontWeight="Bold" TextAlignment="Center"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="130,128,0,0" TextWrapping="Wrap" Text="type your account" VerticalAlignment="Top" Height="37" Width="186"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="130,207,0,0" TextWrapping="Wrap" Text="type your password" VerticalAlignment="Top" Height="32" Width="186"/>
-        <Button x:Name="SIgn_In" Content="Sign In" HorizontalAlignment="Left" Margin="96,310,0,0" VerticalAlignment="Top" Height="58" Width="175" FontWeight="Bold" Click="SIgn_In_Click" Background="{ThemeResource AppBarBackground}"/>
-        <Button Content="Sign Up" HorizontalAlignment="Left" Margin="96,422,0,0" VerticalAlignment="Top" Height="55" Width="178" FontWeight="Bold" Click="Button_Click" Background="{ThemeResource AppBarBackground}"/>
+        <Button x:Name="SIgn_In" Content="Start Note" HorizontalAlignment="Left" Margin="97,235,0,0" VerticalAlignment="Top" Height="58" Width="175" FontWeight="Bold" Click="SIgn_In_Click" Background="{ThemeResource AppBarBackground}"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left"   Margin="55,151,0,0" VerticalAlignment="Top" Width="255" Password=""/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="55,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="217" Height="39">
+            <Run Text="please type  your password"/>
+            <LineBreak/>
+            <Run Text="your original password is 1234"/>
+            <LineBreak/>
+            <Run Text=""/>
+        </TextBlock>
+        <Button x:Name="button" Content="Update your&#xD;&#xA; password&#xD;&#xA;" HorizontalAlignment="Left" Margin="97,326,0,0" VerticalAlignment="Top" Height="61" Width="175" Background="{ThemeResource AppBarBackground}" FontWeight="Bold" Click="button_Click"/>
 
     </Grid>
 </Page>

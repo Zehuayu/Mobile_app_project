@@ -8,12 +8,33 @@
     mc:Ignorable="d">
 
     <Grid>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:ConnectionId='1' x:Name="Starts">
+                <VisualState x:ConnectionId='2' x:Name="VisualState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="800"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:ConnectionId='3' x:Name="VisualState1">
+                    <VisualState.Setters>
+                        <Setter Target="button2.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>96,406,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="0"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
         <Grid.Background>
-            <ImageBrush Stretch="Fill" ImageSource="image/DSC_0366.jpg"/>
+            <ImageBrush ImageSource="image/DSC_0941.jpg" Stretch="Fill"/>
         </Grid.Background>
-        <TextBlock x:ConnectionId='1' x:Name="textBlock" HorizontalAlignment="Left" Margin="76,31,0,0" TextWrapping="Wrap" Text="note your everything" VerticalAlignment="Top" Height="48" Width="223" FontWeight="Bold" TextAlignment="Center"/>
-        <TextBox x:ConnectionId='2' x:Name="textBox" HorizontalAlignment="Left" Margin="53,119,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="253" Width="269" Background="{x:Null}"/>
-        <Button x:ConnectionId='3' x:Name="button" Content="Look at personal notes" HorizontalAlignment="Left" Margin="96,485,0,0" VerticalAlignment="Top" Height="52" Width="186"                     >
+        <TextBlock x:ConnectionId='4' x:Name="textBlock" HorizontalAlignment="Left" Margin="76,31,0,0" TextWrapping="Wrap" Text="note your everything" VerticalAlignment="Top" Height="48" Width="223" FontWeight="Bold" TextAlignment="Center"/>
+        <TextBox x:ConnectionId='5' x:Name="textBox" HorizontalAlignment="Left" Margin="53,119,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="253" Width="269" Background="{x:Null}"/>
+        <Button x:ConnectionId='6' x:Name="button" Content="Look at personal notes" HorizontalAlignment="Left" Margin="96,485,0,0" VerticalAlignment="Top" Height="52" Width="186"                     >
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
@@ -21,7 +42,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:ConnectionId='4' x:Name="button1" Content="Back Sign In Page" HorizontalAlignment="Left" Margin="96,564,0,0" VerticalAlignment="Top" Height="46" Width="186"                      >
+        <Button x:ConnectionId='7' x:Name="button1" Content="Back Sign In Page" HorizontalAlignment="Left" Margin="96,564,0,0" VerticalAlignment="Top" Height="46" Width="186"                      >
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
@@ -29,7 +50,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:ConnectionId='5' x:Name="button2" Content="Button" HorizontalAlignment="Left" Margin="96,403,0,0" VerticalAlignment="Top" Height="53" Width="186">
+        <Button x:ConnectionId='8' x:Name="button2" Content="Save" HorizontalAlignment="Left" Margin="96,403,0,0" VerticalAlignment="Top" Height="53" Width="186"                      >
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>

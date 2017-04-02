@@ -136,17 +136,17 @@ namespace DailyNote.DailyNote_XamlTypeInfo
             _typeNameTable[0] = "DailyNote.Functionpage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "DailyNote.historypage";
-            _typeNameTable[4] = "DailyNote.MainPage";
-            _typeNameTable[5] = "DailyNote.Registerpage";
+            _typeNameTable[3] = "DailyNote.MainPage";
+            _typeNameTable[4] = "DailyNote.ResultPage";
+            _typeNameTable[5] = "DailyNote.UpdataPage";
 
             _typeTable = new global::System.Type[6];
             _typeTable[0] = typeof(global::DailyNote.Functionpage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::DailyNote.historypage);
-            _typeTable[4] = typeof(global::DailyNote.MainPage);
-            _typeTable[5] = typeof(global::DailyNote.Registerpage);
+            _typeTable[3] = typeof(global::DailyNote.MainPage);
+            _typeTable[4] = typeof(global::DailyNote.ResultPage);
+            _typeTable[5] = typeof(global::DailyNote.UpdataPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -182,9 +182,9 @@ namespace DailyNote.DailyNote_XamlTypeInfo
         }
 
         private object Activate_0_Functionpage() { return new global::DailyNote.Functionpage(); }
-        private object Activate_3_historypage() { return new global::DailyNote.historypage(); }
-        private object Activate_4_MainPage() { return new global::DailyNote.MainPage(); }
-        private object Activate_5_Registerpage() { return new global::DailyNote.Registerpage(); }
+        private object Activate_3_MainPage() { return new global::DailyNote.MainPage(); }
+        private object Activate_4_ResultPage() { return new global::DailyNote.ResultPage(); }
+        private object Activate_5_UpdataPage() { return new global::DailyNote.UpdataPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -211,23 +211,23 @@ namespace DailyNote.DailyNote_XamlTypeInfo
                 xamlType = new global::DailyNote.DailyNote_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  DailyNote.historypage
+            case 3:   //  DailyNote.MainPage
                 userType = new global::DailyNote.DailyNote_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_historypage;
+                userType.Activator = Activate_3_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  DailyNote.MainPage
+            case 4:   //  DailyNote.ResultPage
                 userType = new global::DailyNote.DailyNote_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_MainPage;
+                userType.Activator = Activate_4_ResultPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  DailyNote.Registerpage
+            case 5:   //  DailyNote.UpdataPage
                 userType = new global::DailyNote.DailyNote_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_5_Registerpage;
+                userType.Activator = Activate_5_UpdataPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

@@ -8,8 +8,29 @@
     mc:Ignorable="d">
 
     <Grid>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="Starts">
+                <VisualState x:Name="VisualState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="800"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="VisualState1">
+                    <VisualState.Setters>
+                        <Setter Target="button2.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>96,406,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="0"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
         <Grid.Background>
-            <ImageBrush Stretch="Fill" ImageSource="image/DSC_0366.jpg"/>
+            <ImageBrush ImageSource="image/DSC_0941.jpg" Stretch="Fill"/>
         </Grid.Background>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="76,31,0,0" TextWrapping="Wrap" Text="note your everything" VerticalAlignment="Top" Height="48" Width="223" FontWeight="Bold" TextAlignment="Center"/>
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="53,119,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="253" Width="269" Background="{x:Null}"/>
@@ -29,7 +50,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="button2" Content="Button" HorizontalAlignment="Left" Margin="96,403,0,0" VerticalAlignment="Top" Height="53" Width="186">
+        <Button x:Name="button2" Content="Save" HorizontalAlignment="Left" Margin="96,403,0,0" VerticalAlignment="Top" Height="53" Width="186" Click="button2_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
