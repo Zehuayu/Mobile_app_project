@@ -5,7 +5,10 @@ Introduce : this app is kind of Note app, the users are able to use app for noti
 
 this app has original password,let user can not need to register for logon. After that users change the password the password they want also. At result Page, which note some infomation about locaion and date.
 
-The app has 5 pages
+
+
+
+#The app has 5 pages
 
 The First page is logo page
 
@@ -17,8 +20,16 @@ The fourth page is history page, user can review the note
 
 the last page is function page.
 
-Technology
+
+
+
+#Technology
 
 C#: all code is made base on visual studio 2015. I use the senser of GPS in this app, and location is remarked and show in the history page at moment.
 
 SQLite: I use the SQLite for database, It has a lot of advantages, such as free ,small, local data. all notes can be stored in SQlite with date. dsa
+
+
+#Purpose
+
+Let user can easily note everything around life.
