@@ -7,3 +7,6 @@ c#, also has 4 main pages(register page, sigo page, note page and history page).
 
 this app has original password,let user can not need to register for logon. After that users change the password 
 the password they want also. At result Page, which note some infomation about locaion and date. 
+
+
+The app has  
